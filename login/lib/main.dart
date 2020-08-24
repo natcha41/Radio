@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'screens/myhomepage.dart';
-//void main() {
-// runApp((MyApp));
-//}
-void main() => runApp(MyApp());
+import 'package:login/screens/login.dart';
+
+void main() {
+  runApp(MyApp());
+}
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "My Flutter App",
+      title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: "My HomePage"),
+      home: Login (title: 'Flutter Demo Home Page'),
     );
   }
 }
